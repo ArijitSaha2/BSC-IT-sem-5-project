@@ -20,9 +20,7 @@
 
 body {
     font-family: var(--font-family);
-    /* This is the new subtle background gradient */
-    background: #121212;
-    background: linear-gradient(135deg, #1e1e1e 25%, #121212 100%);
+    background-color: var(--background);
     color: var(--text-primary);
     display: flex;
     justify-content: center;
@@ -183,4 +181,3 @@ body {
 .sub-task-item.completed::before {
     content: '●';
 }
-
