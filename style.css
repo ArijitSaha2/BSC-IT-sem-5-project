@@ -20,21 +20,15 @@
 
 body {
     font-family: var(--font-family);
+    /* This is the new subtle background gradient */
+    background: #121212;
+    background: linear-gradient(135deg, #1e1e1e 25%, #121212 100%);
     color: var(--text-primary);
     display: flex;
     justify-content: center;
     align-items: flex-start;
     min-height: 100vh;
     padding: 40px 20px;
-    background: linear-gradient(-45deg, #0f0c29, #302b63, #24243e);
-    background-size: 400% 400%;
-    animation: gradientBG 15s ease infinite;
-}
-
-@keyframes gradientBG {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
 }
 
 .container {
@@ -44,7 +38,7 @@ body {
 }
 
 .app-title {
-    font-size: 2.5rem; /* Reverted to original size for desktop */
+    font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 10px;
     background: -webkit-linear-gradient(45deg, var(--primary), var(--secondary));
@@ -76,7 +70,6 @@ body {
     font-size: 1rem;
     padding: 12px;
     outline: none;
-    min-width: 0; /* Important fix for flexbox */
 }
 
 .input-area button {
@@ -139,7 +132,6 @@ body {
 .main-goal h3 {
     font-size: 1.25rem;
     font-weight: 600;
-    word-break: break-word; /* Prevents long text from overflowing */
 }
 
 .goal-actions button {
@@ -174,7 +166,6 @@ body {
     cursor: pointer;
     color: var(--text-secondary);
     transition: color 0.3s ease;
-    word-break: break-word; /* Prevents long text from overflowing */
 }
 
 .sub-task-item.completed {
@@ -191,23 +182,5 @@ body {
 
 .sub-task-item.completed::before {
     content: '●';
-}
-
-@media (max-width: 480px) {
-    body {
-        padding: 20px 15px; /* Less padding on small screens */
-    }
-
-    .app-title {
-        font-size: 2rem; /* Smaller title */
-    }
-
-    .app-subtitle {
-        font-size: 0.9rem; /* Smaller subtitle */
-    }
-    
-    .input-area {
-        flex-direction: column; /* Stack input and button vertically */
-    }
 }
 
