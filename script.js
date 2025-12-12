@@ -1,4 +1,4 @@
-const geminiApiKey = "AIzaSyC4FlC0rs43mIePszlDmxDO-NrbcjvzgGQ"; // IMPORTANT: PASTE YOUR UNIQUE GEMINI API KEY HERE
+const geminiApiKey = //"AIzaSyC4FlC0rs43mIePszlDmxDO-NrbcjvzgGQ"; // IMPORTANT: PASTE YOUR UNIQUE GEMINI API KEY HERE
 
 const goalInputElement = document.getElementById('goalInput');
 const addGoalButtonElement = document.getElementById('addGoalButton');
